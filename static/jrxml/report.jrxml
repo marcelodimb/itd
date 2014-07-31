@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dc3d4581-fc29-4980-bc8a-00ac2a6e9c17">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="20"/>
+	<property name="ireport.y" value="323"/>
+	<parameter name="PAGE" class="java.lang.String"/>
+	<parameter name="CURRENT_DATE" class="java.lang.String"/>
+	<parameter name="MSG_DATE" class="java.lang.String"/>
+	<parameter name="MSG_DATE_LOWER" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT "x" as name,    10 as qty1,   20 as qty2,  15 as qty3,  29 as qty4
+UNION ALL
+SELECT "y" ,30,   16,  20 ,  8
+UNION ALL
+SELECT "z" ,20,   8,  2 , 20]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="qty1" class="java.lang.Long"/>
+	<field name="qty2" class="java.lang.Long"/>
+	<field name="qty3" class="java.lang.Long"/>
+	<field name="qty4" class="java.lang.Long"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="47" splitType="Stretch">
+			<rectangle>
+				<reportElement x="365" y="1" width="158" height="44" uuid="9c7e1d7f-7686-4f6a-af5b-aef0bf4a937a"/>
+				<graphicElement>
+					<pen lineWidth="0.75" lineColor="#333333"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="448" y="28" width="67" height="13" uuid="ee3d0acb-19ca-409d-8d4f-7698067a0b87"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="11"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ID 5018958-1"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="368" y="2" width="50" height="14" uuid="b8174cb6-70a4-4ff0-bae9-99237910f6af"/>
+				<textElement>
+					<font fontName="Liberation Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Processo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="411" y="3" width="113" height="13" uuid="ff7e1696-c7fe-4e52-a1b6-d8784ebdb91a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="11" isBold="true" pdfFontName="Helvetica-Bold"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Nº E-04 /041/" +$P{PAGE} + "/2014"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="475" y="15" width="39" height="13" uuid="151a76db-f7ef-43e6-83ea-ec8a410d957f"/>
+				<textElement>
+					<font fontName="Arial" isBold="true" pdfFontName="Courier-Bold"/>
+				</textElement>
+				<text><![CDATA[Fl.2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="15" width="34" height="13" uuid="85c8d801-4d49-46fd-83f8-cf8b73e5b6fd"/>
+				<textElement>
+					<font fontName="Liberation Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="28" width="41" height="13" uuid="82ab33d9-9c2e-4904-8650-f1c5e464b305"/>
+				<textElement>
+					<font fontName="Liberation Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Rubrica]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="393" y="15" width="59" height="13" uuid="6b4634df-0124-4ca7-a60d-e4f6d14088a8"/>
+				<textElement>
+					<font fontName="Arial" size="11" isBold="true" pdfFontName="Times-Bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CURRENT_DATE}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="410" y="26" width="37" height="15" uuid="7cad128c-8987-4093-87e0-d1cf70155567"/>
+				<imageExpression><![CDATA["signature.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="475" splitType="Stretch">
+			<staticText>
+				<reportElement x="63" y="103" width="464" height="34" uuid="08b42572-078c-4e1e-a95e-80b41c12cf5f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Liberation Serif" size="9"/>
+				</textElement>
+				<text><![CDATA[GOVERNO DO ESTADO DO RIO DE JANEIRO
+SECRETARIA DE ESTADO DE FAZENDA
+SUBSECRETARIA DE RECEITA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="160" width="464" height="20" uuid="b974ab7e-83d5-4697-a20e-675e7910a906"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="12" isBold="true" isUnderline="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[TERMO DE ABERTURA DE PROCESSO]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="63" y="202" width="464" height="71" uuid="a48f4f49-4b10-4328-a734-116d772162ca"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Serif" size="12" pdfFontName="Times-Roman"/>
+					<paragraph lineSpacing="Double"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Em " + $P{MSG_DATE_LOWER} + ", procedeu-se a abertura do processo de nº E-04/041/" + $P{PAGE} + "/2014. Com este fim e para constar, eu, Antonius Walenkamp, servidor do protocolo, lavrei o presente termo que vai por mim assinado.\n"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="63" y="297" width="464" height="20" uuid="cf69e1d1-92ec-41cd-b26c-f46f2f8c4917"/>
+				<textElement>
+					<font fontName="Serif" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[INSPETORIA DE FISCALIZAÇÃO ESPECIALIZADA 08 - ITD e TAXAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="63" y="317" width="464" height="20" uuid="d913f0ca-9758-4650-b9b8-066dfec619df"/>
+				<textElement>
+					<font fontName="Serif" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Em, " + $P{MSG_DATE} + "."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="63" y="387" width="464" height="16" uuid="396b79b5-722d-4ae7-bf76-970229de72b0"/>
+				<textElement>
+					<font fontName="Serif" size="12" isBold="true" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[ANTONIUS WALENKAMP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="401" width="464" height="16" uuid="af20ff7b-0f8a-459d-813e-c4ea5ee3555e"/>
+				<textElement>
+					<font fontName="Serif" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Analista da Fazenda Estadual]]></text>
+			</staticText>
+			<image>
+				<reportElement x="260" y="23" width="70" height="70" uuid="d068bb95-c3cf-427e-b888-87f5e4642d24"/>
+				<imageExpression><![CDATA["logo_fazenda.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="63" y="415" width="464" height="16" uuid="0ce7c70d-eceb-4e07-910f-f4bac3b7fd1b"/>
+				<textElement>
+					<font fontName="Serif" size="12" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[ID: 5018958-1]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
