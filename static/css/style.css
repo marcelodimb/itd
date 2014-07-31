@@ -1,5 +1,6 @@
 body {
 	background: url(../img/texture_grain_200x200.png) repeat;
+	overflow-x: hidden;
 }
 #hs-report-generator {
 	font: 62.5%/1.25 arial,freesans,garuda,helvetica,sans-serif;
