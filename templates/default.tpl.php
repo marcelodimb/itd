@@ -72,10 +72,21 @@
 		<!--div class="main inner relative clearFix"-->
 		<ul class="main inner relative clearFix">
 			<li class="content">
+				<div class="mAds adTop box">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Responsive Banner Ad -->
+					<ins class="adsbygoogle banner-responsive-top"
+						style="display:inline-block"
+						data-ad-client="ca-pub-6419064927362662"
+						data-ad-slot="4610142910"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
 				<div class="boxSearch box boxMain">
 					<form id="formSearch" method="get">
 						<ul class="clearFix">
-							<li><input type="text" name="search" value="" placeholder="O que você está procurando"/></li>
+							<li><input type="text" name="s" value="" placeholder="O que você está procurando"/></li>
 							<li class="boxSearchInput"><input type="submit" class="button" value="Pesquisar"></li>
 						</ul>
 					</form>
@@ -93,6 +104,17 @@
 						</form>
 					</div>
 				</div>
+				<div class="mAds adBottom box">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- Responsive Banner Ad -->
+					<ins class="adsbygoogle banner-responsive-top"
+						style="display:inline-block"
+						data-ad-client="ca-pub-6419064927362662"
+						data-ad-slot="4610142910"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
 			</li>
 			<li class="lateralBar">
 				<div class="advertisementLeft box boxAds">
@@ -101,9 +123,9 @@
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<!-- 230*230 -->
 							<ins class="adsbygoogle"
-							     style="display:inline-block;width:230px;height:230px"
-							     data-ad-client="ca-pub-6419064927362662"
-							     data-ad-slot="4906350914"></ins>
+								 style="display:inline-block;width:230px;height:230px"
+								 data-ad-client="ca-pub-6419064927362662"
+								 data-ad-slot="4906350914"></ins>
 							<script>
 							(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
@@ -112,9 +134,9 @@
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<!-- 360*230 -->
 							<ins class="adsbygoogle"
-							     style="display:inline-block;width:230px;height:360px"
-							     data-ad-client="ca-pub-6419064927362662"
-							     data-ad-slot="6383084119"></ins>
+								 style="display:inline-block;width:230px;height:360px"
+								 data-ad-client="ca-pub-6419064927362662"
+								 data-ad-slot="6383084119"></ins>
 							<script>
 							(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>

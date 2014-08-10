@@ -99,6 +99,19 @@ body {
 	display: block;
 	margin: 0 auto;
 }
+#hs-report-generator .mAds {
+	display: none;
+}
+#hs-report-generator .adTop {
+	margin-bottom: 10px;
+}
+.banner-responsive-top {
+	width: 295px;
+	height: 50px;
+}
+#hs-report-generator .adBottom {
+	margin-top: 10px;
+}
 #hs-report-generator .boxSearch ul {
 	display: table;
 	width: 100%;
@@ -248,5 +261,20 @@ nav#responsiveMenu {
 	#hs-report-generator .inner {
 		width: 100%;
 		padding: 10px 10px 0 10px;
+	}
+	#hs-report-generator .mAds {
+		display: block;
+	}
+}
+@media(min-width: 800px) {
+	.banner-responsive-top {
+		width: 728px;
+		height: 90px;
+	}
+}
+@media(min-width: 500px) {
+	.banner-responsive-top {
+		width: 468px;
+		height: 60px;
 	}
 }

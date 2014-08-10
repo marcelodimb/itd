@@ -51,6 +51,11 @@
 #main-menu > li:hover > a,
 #main-menu > li.current-menu-item > a {
 	color: #23dbdb;
+	-webkit-transition: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	-o-transition: color 0.3s ease-in;
+	-ms-transition: color 0.3s ease-in;
+	transition: color 0.3s ease-in;
 }
 
 /* HEADER > MENU > DROPDOWN */
@@ -81,6 +86,11 @@ ul.sub-menu > li > a {
 	font-size: 12px;
 	line-height: 15px;
 	padding: 10px 12px;
+	-webkit-transition: background-color 0.3s ease-in;
+	-moz-transition: background-color 0.3s ease-in;
+	-o-transition: background-color 0.3s ease-in;
+	-ms-transition: background-color 0.3s ease-in;
+	transition: background-color 0.3s ease-in;
 }
 ul.sub-menu > li > a:hover {
 	background-color: #2a2a2a; 
