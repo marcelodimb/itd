@@ -76,7 +76,6 @@ body {
 #hs-report-generator .headerResponsiveBar {
 	display: none;
 	height: 40px;
-	padding-left: 12px;
 }
 #hs-report-generator .sandwich {
 	width: 24px;
@@ -85,6 +84,7 @@ body {
 	background: url(../img/responsive_button.png) no-repeat 0 0;
 	position: relative;
 	top: 9px;
+	left: 12px;
 	text-indent: -9999px;
 	z-index: 1;
 }
