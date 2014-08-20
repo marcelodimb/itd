@@ -60,7 +60,7 @@ body {
 	display: block;
 }
 #hs-report-generator header {
-	background-image: linear-gradient(to bottom, #686868, #404040 130%);
+	background: url(../img/bg-header.png) repeat-x;
 }
 #hs-report-generator .headerMainBar {
 	height: 60px;
